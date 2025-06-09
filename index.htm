@@ -1,0 +1,43 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>survey-form.freecodecamp.rocks/</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">name: <input type="text" id="name" placeholder="Enter your name" required></label>
+        <label id="email-label">email: <input type="email" id="email" placeholder="Enter your Email"
+ required></label>
+        <label id="number-label">Age(optional): <input type="number" id="number" min="13" max="120" placeholder="Age"></label>
+        <label for="dropdown">Which option best describes your current role?
+          <select id="dropdown" name="referrer">
+            <option value="">Select current role</option>
+            <option value="1">student</option>
+            <option value="2">full time job</option>
+            <option value="3">full time learner</option>
+            <option value="4">prefer not to say</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+        </fieldset>
+       
+      <fieldset>
+        <legend>What would you like to see improved? (Check all that apply)</legend>
+        <label for="Frontend"><input id="Frontend" type="checkbox" name="account" class="inlinecheckbox" value="10"  /> Front-end Projects</label>
+        <label for="Backend"><input id="Backend" type="checkbox" name="account" class="inlinecheckbox" value="9" /> Back-end Projects</label>
+   <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>   
+        
+      </fieldset>
+      <input type="submit" value="Submit" id="submit" /> 
+
+    </form>
+  </body>
+</html>
